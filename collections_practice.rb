@@ -37,3 +37,14 @@ def sum_array(array)
   array.each  {|x| total += x}
  total
 end
+
+def add_s(array)
+  array.each_with_index do |item, index|
+    if index == 1
+      array[index] = item
+    else
+      array[index] = item + "s"
+    end
+  end
+  array
+end
